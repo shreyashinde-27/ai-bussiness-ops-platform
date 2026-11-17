@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Operations Request Tracker</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    
+<a class="skip-link" href="#main">
+    Skip to main content
+</a>
+
+<header class="site-header">
+    <a class="brand" href="#dashboard">
+        Operations Request Tracker
+    </a>
+
+    <p class="demo-label">Demo Prototype</p>
+</header>
+
+<nav class="main-nav" aria-label="Main navigation">
+
+    <a href="#dashboard">Dashboard</a>
+
+    <a href="#new-request">New Request</a>
+
+    <a href="#requests">Requests</a>
+
+    <a href="#users">Users</a>
+
+</nav>
+
+
+<main id="main" class="page-shell">
+    <section id="sign-in">
+
+    <h2>Demo Sign In</h2>
+
+    <p>Demo only – no real authentication.</p>
+
+    <form>
+
+        <div class="form-field">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                autocomplete="email"
+                required
+            >
+        </div>
+
+        <div class="form-field">
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                autocomplete="current-password"
+                required
+            >
+        </div>
+
+        <button type="button">Continue to demo</button>
+
+    </form>
+
+</section>
+
+    <section id="dashboard">
+
+        <h1>Dashboard</h1>
+
+        <p>A quick view of team requests.</p>
+
+        <div class="summary-grid">
+
+            <article class="summary-card">
+                <h2>Open</h2>
+                <p class="metric">8</p>
+            </article>
+
+            <article class="summary-card">
+                <h2>In Progress</h2>
+                <p class="metric">4</p>
+            </article>
+
+            <article class="summary-card">
+                <h2>Completed</h2>
+                <p class="metric">12</p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+<section id="new-request">
+
+    <h2>Create a New Request</h2>
+
+    <form class="request-form">
+
+        <div class="form-field">
+            <label for="title">Request Title</label>
+
+            <input
+                type="text"
+                id="title"
+                name="title"
+                required
+            >
+        </div>
+
+        <div class="form-field">
+            <label for="category">Category</label>
+
+            <select id="category" name="category" required>
+                <option value="">Select category</option>
+                <option value="IT Support">IT Support</option>
+                <option value="Facilities">Facilities</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label for="priority">Priority</label>
+
+            <select id="priority" name="priority" required>
+                <option value="">Select priority</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label for="description">Description</label>
+
+            <textarea
+                id="description"
+                name="description"
+                rows="4"
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit">Submit Request</button>
+
+    </form>
+
+</section>
+
+
+<section id="requests">
+
+    <h2>All Requests</h2>
+
+    <div class="table-wrap">
+
+        <table>
+
+            <caption>Operations request records</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Priority</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>REQ-101</td>
+                    <td>Replace charger</td>
+                    <td>IT Support</td>
+                    <td>High</td>
+                    <td>Open</td>
+                </tr>
+
+                <tr>
+                    <td>REQ-102</td>
+                    <td>Fix meeting-room light</td>
+                    <td>Facilities</td>
+                    <td>Medium</td>
+                    <td>In Progress</td>
+                </tr>
+
+                <tr>
+                    <td>REQ-103</td>
+                    <td>Update visitor policy</td>
+                    <td>Admin</td>
+                    <td>Low</td>
+                    <td>Completed</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section id="users">
+
+    <h2>Manage Users</h2>
+
+    <table>
+        <caption>Platform users</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Asha Rao</td>
+                <td>asha@example.com</td>
+                <td>Employee</td>
+            </tr>
+
+            <tr>
+                <td>Ravi Shah</td>
+                <td>ravi@example.com</td>
+                <td>Manager</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<footer class="site-footer">
+    <p>Team project prototype · sample data only</p>
+</footer>
+
+
+</main>
+
+
+    <!-- Website content will come here -->
+
+</body>
+
+</html>
